@@ -94,5 +94,6 @@ class Main {
 
 		System.out.println(scan(input.next()));
 		input.close();
+		System.out.print("You can make changes to the foo.txt and run it again if you want.");
   }
 }
