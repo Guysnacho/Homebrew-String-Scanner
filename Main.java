@@ -44,6 +44,15 @@ class Main {
 			} else if(current.equals("-")){
 				list.add("minus");
 				continue;
+			} else if(current.equals(":=")){
+				list.add("assign");
+				continue;
+			} else if(current.equals("(")){
+				list.add("lparen");
+				continue;
+			} else if(current.equals(")")){
+				list.add("rparen");
+				continue;
 			}
 
 			//Check if the token is a number.
