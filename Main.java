@@ -80,6 +80,10 @@ class Main {
 
 	//We need the FileNotFound exception in case the file to be read isn't in the same directory as this file
   public static void main(String[] args) throws FileNotFoundException {
-		System.out.println(scan("foo.txt"));
+		System.out.print("Please enter the filename - ");
+		Scanner input = new Scanner(System.in);
+
+		System.out.println(scan(input.next()));
+		input.close();
   }
 }
